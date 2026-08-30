@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "products": {
     "totori": {
       "name": "หมอนโตโตโร่ รุ่น Cloud",
@@ -385,6 +385,16 @@
         [
           "2026-09-20",
           79
+        ]
+      ]
+    },
+    "coldbrew": {
+      "name": "Mix & Go Cold Brew Concentrate 1,000ml",
+      "buy": "https://s.shopee.co.th/2qUBaDxqnR",
+      "points": [
+        [
+          "2026-09-21",
+          250
         ]
       ]
     }
