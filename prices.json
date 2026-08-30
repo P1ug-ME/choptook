@@ -1,15 +1,110 @@
 {
-  "updated": "2026-08-30",
-  "products": {
-    "totori":  {"name": "หมอนโตโตโร่ รุ่น Cloud",              "buy": "https://s.shopee.co.th/112WZi9pUX", "points": [["2026-08-30", 124]]},
-    "tyeso":   {"name": "TYESO แก้วเก็บความเย็น 600/750ml",     "buy": "https://s.shopee.co.th/8AVh6ffcJA", "points": [["2026-08-30", 389]]},
-    "onikuma": {"name": "ONIKUMA HOKO ไมค์ USB",               "buy": "https://s.shopee.co.th/6Akcj4FnJ1", "points": [["2026-08-30", 939]]},
-    "hs":      {"name": "Head & Shoulders 370ml x2",            "buy": "https://s.shopee.co.th/4VcOlvj9VK", "points": [["2026-08-30", 198]]},
-    "cerave":  {"name": "CERAVE Moisturising Cream 50ml",       "buy": "https://s.shopee.co.th/9fKUvQl06F", "points": [["2026-08-30", 225]]},
-    "oralb":   {"name": "Oral-B แปรงสีฟันไฟฟ้า DB5",           "buy": "https://s.shopee.co.th/8V8XXIBmgs", "points": [["2026-08-30", 486]]},
-    "downy":   {"name": "Downy น้ำยาปรับผ้านุ่ม 950มล.",        "buy": "https://s.shopee.co.th/6L4315RjY1", "points": [["2026-08-30", 714]]},
-    "mizumi":  {"name": "MizuMI UV Bright Body Serum",          "buy": "https://s.shopee.co.th/9fKUzHGw0P", "points": [["2026-08-30", 459]]},
-    "op":      {"name": "Oriental Princess โลชั่น 390ml",       "buy": "https://s.shopee.co.th/3LQRRbP9CX", "points": [["2026-08-30", 148]]},
-    "lenodi":  {"name": "ตู้เย็น LENODI 5.2Q (Lazada)",         "buy": "https://s.lazada.co.th/s.Z8ouKK",   "points": []}
+ "updated": "2026-08-30",
+ "products": {
+  "totori": {
+   "name": "หมอนโตโตโร่ รุ่น Cloud",
+   "buy": "https://s.shopee.co.th/112WZi9pUX",
+   "points": [
+    [
+     "2026-08-30",
+     124
+    ]
+   ]
+  },
+  "tyeso": {
+   "name": "TYESO แก้วเก็บความเย็น 600/750ml",
+   "buy": "https://s.shopee.co.th/8AVh6ffcJA",
+   "points": [
+    [
+     "2026-08-30",
+     389
+    ]
+   ]
+  },
+  "onikuma": {
+   "name": "ONIKUMA HOKO ไมค์ USB",
+   "buy": "https://s.shopee.co.th/6Akcj4FnJ1",
+   "points": [
+    [
+     "2026-08-30",
+     939
+    ]
+   ]
+  },
+  "hs": {
+   "name": "Head & Shoulders 370ml x2",
+   "buy": "https://s.shopee.co.th/4VcOlvj9VK",
+   "points": [
+    [
+     "2026-08-30",
+     198
+    ]
+   ]
+  },
+  "cerave": {
+   "name": "CERAVE Moisturising Cream 50ml",
+   "buy": "https://s.shopee.co.th/9fKUvQl06F",
+   "points": [
+    [
+     "2026-08-30",
+     225
+    ]
+   ]
+  },
+  "oralb": {
+   "name": "Oral-B แปรงสีฟันไฟฟ้า DB5",
+   "buy": "https://s.shopee.co.th/8V8XXIBmgs",
+   "points": [
+    [
+     "2026-08-30",
+     486
+    ]
+   ]
+  },
+  "downy": {
+   "name": "Downy น้ำยาปรับผ้านุ่ม 950มล.",
+   "buy": "https://s.shopee.co.th/6L4315RjY1",
+   "points": [
+    [
+     "2026-08-30",
+     714
+    ]
+   ]
+  },
+  "mizumi": {
+   "name": "MizuMI UV Bright Body Serum",
+   "buy": "https://s.shopee.co.th/9fKUzHGw0P",
+   "points": [
+    [
+     "2026-08-30",
+     459
+    ]
+   ]
+  },
+  "op": {
+   "name": "Oriental Princess โลชั่น 390ml",
+   "buy": "https://s.shopee.co.th/3LQRRbP9CX",
+   "points": [
+    [
+     "2026-08-30",
+     148
+    ]
+   ]
+  },
+  "lenodi": {
+   "name": "ตู้เย็น LENODI 5.2Q (Lazada)",
+   "buy": "https://s.lazada.co.th/s.Z8ouKK",
+   "points": []
+  },
+  "systema": {
+   "name": "SYSTEMA แปรงสีฟัน 6 ด้าม",
+   "buy": "https://s.shopee.co.th/9V14oIkJeO",
+   "points": [
+    [
+     "2026-08-30",
+     235
+    ]
+   ]
   }
+ }
 }

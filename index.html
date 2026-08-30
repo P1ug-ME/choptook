@@ -93,6 +93,12 @@
     max-width:40rem; margin-left:auto; margin-right:auto }
   .follow p { margin:0 0 .7rem; font-weight:600; font-family:"Mitr",sans-serif; font-size:1.15rem }
   .follow a { color:#2B1B12; font-weight:600; text-decoration:underline; text-underline-offset:3px }
+  .pager { display:flex; justify-content:center; align-items:center; gap:.6rem; margin-top:2rem }
+  .pager button { font-family:"Mitr",sans-serif; font-weight:600; font-size:1rem; min-width:2.6rem;
+    padding:.45em .9em; border-radius:999px; border:1px solid var(--line); background:var(--card);
+    color:var(--muted); cursor:pointer }
+  .pager button[aria-current="true"] { background:var(--deal); border-color:var(--deal); color:#fff }
+  .pager button:hover:not([aria-current="true"]) { color:var(--ink); border-color:var(--muted) }
   footer { margin-top:2.5rem; color:var(--muted); font-size:.82rem; text-align:center; text-wrap:balance }
 </style>
 </head>
@@ -105,58 +111,74 @@
   </header>
 
   <main>
-    <article class="coupon" id="totori" data-key="totori">
+    <article class="coupon" id="systema" data-key="systema">
       <div class="coupon-top">
-        <h2>หมอนโตโตโร่ รุ่น Cloud นุ่มปุกปิก</h2>
-        <span class="chip">-76%</span>
+        <h2>SYSTEMA แปรงสีฟันขนนุ่ม รุ่น Original 6 ด้าม</h2>
+        <span class="chip">-45%</span>
+      </div>
+      <p class="sold">ขายแล้ว 80,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿235</span>
+        <span class="was">฿428</span>
+      </div>
+      <p class="why">แพ็ค 6 ด้ามเฉลี่ยด้ามละ ~฿39 ขนนุ่มหัวเรียว ของใช้ประจำวันที่ควรตุน</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/9V14oIkJeO" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="systema" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-systema" hidden></div>
+    </article>
+
+    <article class="coupon" id="downy" data-key="downy">
+      <div class="coupon-top">
+        <h2>Downy น้ำยาปรับผ้านุ่มเข้มข้น 950มล. [4 แถม 2]</h2>
+        <span class="chip">ขายดี</span>
+      </div>
+      <p class="sold">ขายแล้ว 300,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿714</span>
+      </div>
+      <p class="why">กลิ่นหอมติดผ้านาน โปรซื้อ 4 แถม 2 เฉลี่ยต่อถุงคุ้มมาก</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/6L4315RjY1" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="downy" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-downy" hidden></div>
+    </article>
+
+    <article class="coupon" id="mizumi" data-key="mizumi">
+      <div class="coupon-top">
+        <h2>MizuMI UV Bright Body Serum 180ml</h2>
+        <span class="chip">-41%</span>
+      </div>
+      <p class="sold">ขายแล้ว 200,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿459</span>
+        <span class="was">฿778</span>
+      </div>
+      <p class="why">กันแดดผิวกายตัวดัง SPF50+ เกลี่ยง่ายไม่วอก</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/9fKUzHGw0P" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="mizumi" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-mizumi" hidden></div>
+    </article>
+
+    <article class="coupon" id="op" data-key="op">
+      <div class="coupon-top">
+        <h2>Oriental Princess โลชั่นบำรุงผิว 390ml</h2>
+        <span class="chip">ขายดี</span>
       </div>
       <p class="sold">ขายแล้ว 100,000++ ชิ้น</p>
       <div class="price-row">
-        <span class="price">฿124</span>
-        <span class="was">฿517</span>
+        <span class="price">฿148</span>
       </div>
-      <p class="why">ตัวการ์ตูนในตำนาน นุ่มจนไม่อยากลุกจากที่นอน ราคานี้คือถูกสุดที่เคยเห็น</p>
+      <p class="why">โลชั่นกลิ่นหอมละมุน แพ็คเกจใหม่ ราคาน่ารักมาก</p>
       <div class="actions">
-        <a class="cta" href="https://s.shopee.co.th/112WZi9pUX" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
-        <button class="hist-btn" data-key="totori" type="button">📈 ประวัติราคา</button>
+        <a class="cta" href="https://s.shopee.co.th/3LQRRbP9CX" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="op" type="button">📈 ประวัติราคา</button>
       </div>
-      <div class="hist" id="hist-totori" hidden></div>
-    </article>
-
-    <article class="coupon" id="tyeso" data-key="tyeso">
-      <div class="coupon-top">
-        <h2>TYESO แก้วเก็บความเย็น 600/750ml</h2>
-        <span class="chip">-51%</span>
-      </div>
-      <p class="sold">ขายแล้ว 20,000++ ชิ้น</p>
-      <div class="price-row">
-        <span class="price">฿389</span>
-        <span class="was">฿794</span>
-      </div>
-      <p class="why">น้ำแข็งอยู่ข้ามวันจริง สายกาแฟ-ชาเย็นต้องมีติดโต๊ะ</p>
-      <div class="actions">
-        <a class="cta" href="https://s.shopee.co.th/8AVh6ffcJA" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
-        <button class="hist-btn" data-key="tyeso" type="button">📈 ประวัติราคา</button>
-      </div>
-      <div class="hist" id="hist-tyeso" hidden></div>
-    </article>
-
-    <article class="coupon" id="onikuma" data-key="onikuma">
-      <div class="coupon-top">
-        <h2>ONIKUMA HOKO ไมค์ USB ตั้งโต๊ะ</h2>
-        <span class="chip">ขายดี</span>
-      </div>
-      <p class="sold">ขายแล้ว 10,000++ ชิ้น · ★ 4.8 (5,052 รีวิว)</p>
-      <div class="price-row">
-        <span class="price">฿939</span>
-        <span class="was">฿990</span>
-      </div>
-      <p class="why">เสียงคมชัดเกินราคา สายสตรีม เล่นเกม ประชุมออนไลน์ จบในตัวเดียว</p>
-      <div class="actions">
-        <a class="cta" href="https://s.shopee.co.th/6Akcj4FnJ1" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
-        <button class="hist-btn" data-key="onikuma" type="button">📈 ประวัติราคา</button>
-      </div>
-      <div class="hist" id="hist-onikuma" hidden></div>
+      <div class="hist" id="hist-op" hidden></div>
     </article>
 
     <article class="coupon" id="hs" data-key="hs">
@@ -212,58 +234,6 @@
       <div class="hist" id="hist-oralb" hidden></div>
     </article>
 
-    <article class="coupon" id="downy" data-key="downy">
-      <div class="coupon-top">
-        <h2>Downy น้ำยาปรับผ้านุ่มเข้มข้น 950มล. [4 แถม 2]</h2>
-        <span class="chip">ขายดี</span>
-      </div>
-      <p class="sold">ขายแล้ว 300,000++ ชิ้น</p>
-      <div class="price-row">
-        <span class="price">฿714</span>
-      </div>
-      <p class="why">กลิ่นหอมติดผ้านาน โปรซื้อ 4 แถม 2 เฉลี่ยต่อถุงคุ้มมาก</p>
-      <div class="actions">
-        <a class="cta" href="https://s.shopee.co.th/6L4315RjY1" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
-        <button class="hist-btn" data-key="downy" type="button">📈 ประวัติราคา</button>
-      </div>
-      <div class="hist" id="hist-downy" hidden></div>
-    </article>
-
-    <article class="coupon" id="mizumi" data-key="mizumi">
-      <div class="coupon-top">
-        <h2>MizuMI UV Bright Body Serum 180ml</h2>
-        <span class="chip">-41%</span>
-      </div>
-      <p class="sold">ขายแล้ว 200,000++ ชิ้น</p>
-      <div class="price-row">
-        <span class="price">฿459</span>
-        <span class="was">฿778</span>
-      </div>
-      <p class="why">กันแดดผิวกายตัวดัง SPF50+ เกลี่ยง่ายไม่วอก</p>
-      <div class="actions">
-        <a class="cta" href="https://s.shopee.co.th/9fKUzHGw0P" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
-        <button class="hist-btn" data-key="mizumi" type="button">📈 ประวัติราคา</button>
-      </div>
-      <div class="hist" id="hist-mizumi" hidden></div>
-    </article>
-
-    <article class="coupon" id="op" data-key="op">
-      <div class="coupon-top">
-        <h2>Oriental Princess โลชั่นบำรุงผิว 390ml</h2>
-        <span class="chip">ขายดี</span>
-      </div>
-      <p class="sold">ขายแล้ว 100,000++ ชิ้น</p>
-      <div class="price-row">
-        <span class="price">฿148</span>
-      </div>
-      <p class="why">โลชั่นกลิ่นหอมละมุน แพ็คเกจใหม่ ราคาน่ารักมาก</p>
-      <div class="actions">
-        <a class="cta" href="https://s.shopee.co.th/3LQRRbP9CX" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
-        <button class="hist-btn" data-key="op" type="button">📈 ประวัติราคา</button>
-      </div>
-      <div class="hist" id="hist-op" hidden></div>
-    </article>
-
     <article class="coupon" id="lenodi" data-key="lenodi">
       <div class="coupon-top">
         <h2>ตู้เย็น LENODI 5.2Q 2 ประตู</h2>
@@ -280,7 +250,63 @@
       </div>
       <div class="hist" id="hist-lenodi" hidden></div>
     </article>
+
+    <article class="coupon" id="totori" data-key="totori">
+      <div class="coupon-top">
+        <h2>หมอนโตโตโร่ รุ่น Cloud นุ่มปุกปิก</h2>
+        <span class="chip">-76%</span>
+      </div>
+      <p class="sold">ขายแล้ว 100,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿124</span>
+        <span class="was">฿517</span>
+      </div>
+      <p class="why">ตัวการ์ตูนในตำนาน นุ่มจนไม่อยากลุกจากที่นอน ราคานี้คือถูกสุดที่เคยเห็น</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/112WZi9pUX" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="totori" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-totori" hidden></div>
+    </article>
+
+    <article class="coupon" id="tyeso" data-key="tyeso">
+      <div class="coupon-top">
+        <h2>TYESO แก้วเก็บความเย็น 600/750ml</h2>
+        <span class="chip">-51%</span>
+      </div>
+      <p class="sold">ขายแล้ว 20,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿389</span>
+        <span class="was">฿794</span>
+      </div>
+      <p class="why">น้ำแข็งอยู่ข้ามวันจริง สายกาแฟ-ชาเย็นต้องมีติดโต๊ะ</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/8AVh6ffcJA" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="tyeso" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-tyeso" hidden></div>
+    </article>
+
+    <article class="coupon" id="onikuma" data-key="onikuma">
+      <div class="coupon-top">
+        <h2>ONIKUMA HOKO ไมค์ USB ตั้งโต๊ะ</h2>
+        <span class="chip">ขายดี</span>
+      </div>
+      <p class="sold">ขายแล้ว 10,000++ ชิ้น · ★ 4.8 (5,052 รีวิว)</p>
+      <div class="price-row">
+        <span class="price">฿939</span>
+        <span class="was">฿990</span>
+      </div>
+      <p class="why">เสียงคมชัดเกินราคา สายสตรีม เล่นเกม ประชุมออนไลน์ จบในตัวเดียว</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/6Akcj4FnJ1" target="_blank" rel="noopener">รับดีลนี้ที่ Shopee →</a>
+        <button class="hist-btn" data-key="onikuma" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-onikuma" hidden></div>
+    </article>
   </main>
+
+  <nav class="pager" id="pager" aria-label="หน้า"></nav>
 
   <div class="follow">
     <p>ไม่อยากพลาดของถูก?</p>
@@ -350,8 +376,42 @@
       open(btn.dataset.key);
     });
   });
+  var PAGE = 8;
+  var items = [].slice.call(document.querySelectorAll("main .coupon"));
+  var pages = Math.max(1, Math.ceil(items.length / PAGE));
+  var pager = document.getElementById("pager");
+  var current = 0;
+  function showPage(n) {
+    current = Math.min(Math.max(0, n), pages - 1);
+    items.forEach(function (el, i) {
+      el.style.display = (i >= current * PAGE && i < (current + 1) * PAGE) ? "" : "none";
+    });
+    [].slice.call(pager.children).forEach(function (b, i) {
+      b.setAttribute("aria-current", i === current ? "true" : "false");
+    });
+  }
+  if (pages > 1) {
+    for (var i = 0; i < pages; i++) {
+      (function (n) {
+        var b = document.createElement("button");
+        b.type = "button"; b.textContent = n + 1;
+        b.addEventListener("click", function () { showPage(n); window.scrollTo({ top: 0 }); });
+        pager.appendChild(b);
+      })(i);
+    }
+  }
+  showPage(0);
+
   var hash = location.hash.replace("#", "");
-  if (hash && document.getElementById(hash)) { open(hash); }
+  if (hash) {
+    var target = document.getElementById(hash);
+    if (target) {
+      var idx = items.indexOf(target);
+      if (idx >= 0) showPage(Math.floor(idx / PAGE));
+      open(hash);
+      target.scrollIntoView();
+    }
+  }
 })();
 </script>
 </body>
