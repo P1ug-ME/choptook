@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "products": {
     "totori": {
       "name": "หมอนโตโตโร่ รุ่น Cloud",
@@ -303,6 +303,16 @@
         [
           "2026-08-31",
           84
+        ]
+      ]
+    },
+    "pallas": {
+      "name": "Pallas Foot Care Spray 150ml",
+      "buy": "https://s.shopee.co.th/4AzYxD0dsA",
+      "points": [
+        [
+          "2026-09-02",
+          179
         ]
       ]
     }
