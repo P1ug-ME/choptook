@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-06",
   "products": {
     "totori": {
       "name": "หมอนโตโตโร่ รุ่น Cloud",
@@ -331,6 +331,26 @@
         [
           "2026-09-03",
           89
+        ]
+      ]
+    },
+    "kirei": {
+      "name": "Kirei Kirei โฟมล้างมือ ถุงเติม 200ml x3",
+      "buy": "https://s.shopee.co.th/6L43a8pHNB",
+      "points": [
+        [
+          "2026-09-06",
+          79
+        ]
+      ]
+    },
+    "siriraj": {
+      "name": "ศิริราช มายด์ แชมพู หัวปั๊ม 200ml",
+      "buy": "https://s.shopee.co.th/30nbc0APrM",
+      "points": [
+        [
+          "2026-09-06",
+          130
         ]
       ]
     }
