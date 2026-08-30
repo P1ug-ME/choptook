@@ -4,219 +4,94 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ช้อปถูกบอกด้วย</title>
+<meta name="description" content="ช้อปถูกบอกด้วย — คัดดีล Shopee + Lazada ที่ลดจริง ขายดีจริง พร้อมประวัติราคา">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mitr:wght@500;600;700&family=Anuphan:wght@400;500;600&display=swap">
 <style>
   :root {
-    --paper: #FFF4EC;
-    --card: #FFFDFA;
-    --ink: #2B1B12;
-    --muted: #8A6F5E;
-    --line: #E8D5C6;
-    --deal: #F2451C;
-    --deal-deep: #C93312;
-    --drop: #0E7A5F;
-    --sticker: #FFD24A;
-    --tag-shadow: 0 10px 30px -12px rgba(201, 51, 18, 0.35);
-    --hole: #FFF4EC;
+    --paper: #FFF4EC; --card: #FFFDFA; --ink: #2B1B12; --muted: #8A6F5E;
+    --line: #E8D5C6; --deal: #F2451C; --deal-deep: #C93312; --drop: #0E7A5F;
+    --sticker: #FFD24A; --tag-shadow: 0 10px 30px -12px rgba(201,51,18,.35); --hole: #FFF4EC;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper: #201410;
-      --card: #2B1C15;
-      --ink: #F5E9DE;
-      --muted: #B99C88;
-      --line: #4A3327;
-      --deal: #FF6A3D;
-      --deal-deep: #F2451C;
-      --drop: #3ECF9B;
-      --sticker: #FFC93A;
-      --tag-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
-      --hole: #201410;
+      --paper:#201410; --card:#2B1C15; --ink:#F5E9DE; --muted:#B99C88; --line:#4A3327;
+      --deal:#FF6A3D; --deal-deep:#F2451C; --drop:#3ECF9B; --sticker:#FFC93A;
+      --tag-shadow:0 10px 30px -12px rgba(0,0,0,.6); --hole:#201410;
     }
   }
   :root[data-theme="dark"] {
-    --paper: #201410;
-    --card: #2B1C15;
-    --ink: #F5E9DE;
-    --muted: #B99C88;
-    --line: #4A3327;
-    --deal: #FF6A3D;
-    --deal-deep: #F2451C;
-    --drop: #3ECF9B;
-    --sticker: #FFC93A;
-    --tag-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
-    --hole: #201410;
+    --paper:#201410; --card:#2B1C15; --ink:#F5E9DE; --muted:#B99C88; --line:#4A3327;
+    --deal:#FF6A3D; --deal-deep:#F2451C; --drop:#3ECF9B; --sticker:#FFC93A;
+    --tag-shadow:0 10px 30px -12px rgba(0,0,0,.6); --hole:#201410;
   }
-
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: "Anuphan", "Noto Sans Thai", system-ui, sans-serif;
-    line-height: 1.65;
-    margin: 0;
-    padding: 0 1.25rem 4rem;
-  }
-  .wrap { max-width: 40rem; margin: 0 auto; }
-
-  /* ---- hero: a tilted price tag -------------------------------------- */
-  header { padding: 3.5rem 0 1rem; text-align: center; }
-  .tag {
-    display: inline-block;
-    position: relative;
-    background: var(--deal);
-    color: #fff;
-    font-family: "Mitr", "Anuphan", sans-serif;
-    font-weight: 700;
-    font-size: clamp(2rem, 7vw, 3rem);
-    line-height: 1.15;
-    padding: 0.55em 0.9em 0.55em 1.5em;
-    border-radius: 14px;
-    transform: rotate(-2.5deg);
-    box-shadow: var(--tag-shadow);
-    text-wrap: balance;
-  }
-  .tag::before {
-    content: "";
-    position: absolute;
-    left: 0.55em; top: 50%;
-    width: 0.5em; height: 0.5em;
-    transform: translateY(-50%);
-    background: var(--hole);
-    border-radius: 50%;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
-  }
-  .tagline {
-    margin: 1.4rem auto 0;
-    max-width: 32rem;
-    color: var(--muted);
-    font-size: 1rem;
-  }
-  .tagline strong { color: var(--ink); font-weight: 600; }
-
-  /* ---- deal coupons --------------------------------------------------- */
-  main { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2.25rem; }
-  .coupon {
-    position: relative;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 1.4rem 1.5rem 1.5rem;
-    box-shadow: 0 2px 10px -6px rgba(43, 27, 18, 0.18);
-  }
-  /* punched holes on the coupon's left edge */
-  .coupon::before, .coupon::after {
-    content: "";
-    position: absolute;
-    left: -9px;
-    width: 18px; height: 18px;
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 50%;
-  }
-  .coupon::before { top: -9px; clip-path: inset(50% -4px -4px -4px); border-top: 0; }
-  .coupon::after  { bottom: -9px; clip-path: inset(-4px -4px 50% -4px); border-bottom: 0; }
-
-  .coupon-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
-  .coupon h2 {
-    font-family: "Mitr", "Anuphan", sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.35;
-    margin: 0;
-    text-wrap: balance;
-  }
-  .chip {
-    flex-shrink: 0;
-    font-family: "Mitr", sans-serif;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: #fff;
-    background: var(--drop);
-    padding: 0.15em 0.7em;
-    border-radius: 999px;
-    transform: rotate(2deg);
-  }
-  .sold {
-    margin: 0.35rem 0 0;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-  .price-row {
-    display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    margin: 0.9rem 0 1.1rem;
-    font-variant-numeric: tabular-nums;
-  }
-  .price {
-    font-family: "Mitr", sans-serif;
-    font-weight: 700;
-    font-size: 2.1rem;
-    color: var(--deal);
-    line-height: 1;
-  }
-  .was {
-    color: var(--muted);
-    text-decoration: line-through;
-    font-size: 1rem;
-  }
-  .why { margin: 0 0 1.2rem; font-size: 0.98rem; }
-  .cta {
-    display: inline-block;
-    font-family: "Mitr", sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    color: #fff;
-    background: var(--deal);
-    padding: 0.55em 1.6em;
-    border-radius: 999px;
-    text-decoration: none;
-    box-shadow: var(--tag-shadow);
-    transition: transform 0.15s ease, background 0.15s ease;
-  }
-  .cta:hover { background: var(--deal-deep); transform: translateY(-2px); }
-  .cta:focus-visible { outline: 3px solid var(--sticker); outline-offset: 2px; }
-  @media (prefers-reduced-motion: reduce) {
-    .cta { transition: none; }
-    .cta:hover { transform: none; }
-  }
-
-  /* ---- follow + disclosure ------------------------------------------- */
-  .follow {
-    margin-top: 2.75rem;
-    text-align: center;
-    background: var(--sticker);
-    color: #2B1B12;
-    border-radius: 16px;
-    padding: 1.5rem 1.25rem;
-    transform: rotate(0.6deg);
-  }
-  .follow p { margin: 0 0 0.7rem; font-weight: 600; font-family: "Mitr", sans-serif; font-size: 1.15rem; }
-  .follow a {
-    color: #2B1B12;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-  footer {
-    margin-top: 2.5rem;
-    color: var(--muted);
-    font-size: 0.82rem;
-    text-align: center;
-    text-wrap: balance;
-  }
+  * { margin:0; box-sizing:border-box }
+  body { background:var(--paper); color:var(--ink); font-family:"Anuphan","Noto Sans Thai",system-ui,sans-serif;
+    line-height:1.65; padding:0 1.25rem 4rem }
+  .wrap { max-width:40rem; margin:0 auto }
+  header { padding:3.5rem 0 1rem; text-align:center }
+  .tag { display:inline-block; position:relative; background:var(--deal); color:#fff;
+    font-family:"Mitr",sans-serif; font-weight:700; font-size:clamp(2rem,7vw,3rem); line-height:1.15;
+    padding:.55em .9em .55em 1.5em; border-radius:14px; transform:rotate(-2.5deg);
+    box-shadow:var(--tag-shadow); text-wrap:balance }
+  .tag::before { content:""; position:absolute; left:.55em; top:50%; width:.5em; height:.5em;
+    transform:translateY(-50%); background:var(--hole); border-radius:50%;
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.25) }
+  .tagline { margin:1.4rem auto 0; max-width:32rem; color:var(--muted); font-size:1rem }
+  .tagline strong { color:var(--ink); font-weight:600 }
+  main { display:flex; flex-direction:column; gap:1.5rem; margin-top:2.25rem }
+  .coupon { position:relative; background:var(--card); border:1px solid var(--line);
+    border-radius:16px; padding:1.4rem 1.5rem 1.5rem; box-shadow:0 2px 10px -6px rgba(43,27,18,.18);
+    scroll-margin-top:1.5rem }
+  .coupon:target { outline:3px solid var(--sticker); outline-offset:3px }
+  .coupon::before, .coupon::after { content:""; position:absolute; left:-9px; width:18px; height:18px;
+    background:var(--paper); border:1px solid var(--line); border-radius:50% }
+  .coupon::before { top:-9px; clip-path:inset(50% -4px -4px -4px); border-top:0 }
+  .coupon::after { bottom:-9px; clip-path:inset(-4px -4px 50% -4px); border-bottom:0 }
+  .coupon-top { display:flex; align-items:flex-start; justify-content:space-between; gap:.75rem }
+  .coupon h2 { font-family:"Mitr",sans-serif; font-weight:600; font-size:1.3rem; line-height:1.35; text-wrap:balance }
+  .chip { flex-shrink:0; font-family:"Mitr",sans-serif; font-weight:600; font-size:.95rem; color:#fff;
+    background:var(--drop); padding:.15em .7em; border-radius:999px; transform:rotate(2deg) }
+  .sold { margin:.35rem 0 0; color:var(--muted); font-size:.9rem }
+  .price-row { display:flex; align-items:baseline; gap:.75rem; margin:.9rem 0 1.1rem; font-variant-numeric:tabular-nums }
+  .price { font-family:"Mitr",sans-serif; font-weight:700; font-size:2.1rem; color:var(--deal); line-height:1 }
+  .was { color:var(--muted); text-decoration:line-through; font-size:1rem }
+  .why { margin:0 0 1.2rem; font-size:.98rem }
+  .actions { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap }
+  .cta { display:inline-block; font-family:"Mitr",sans-serif; font-weight:600; font-size:1.05rem; color:#fff;
+    background:var(--deal); padding:.55em 1.6em; border-radius:999px; text-decoration:none;
+    box-shadow:var(--tag-shadow); transition:transform .15s ease, background .15s ease }
+  .cta:hover { background:var(--deal-deep); transform:translateY(-2px) }
+  .cta:focus-visible, .hist-btn:focus-visible { outline:3px solid var(--sticker); outline-offset:2px }
+  .hist-btn { font-family:"Anuphan",sans-serif; font-weight:600; font-size:.9rem; color:var(--muted);
+    background:none; border:1px solid var(--line); border-radius:999px; padding:.5em 1.1em; cursor:pointer;
+    transition:color .15s ease, border-color .15s ease }
+  .hist-btn:hover { color:var(--ink); border-color:var(--muted) }
+  .hist { margin-top:1.1rem; border-top:1px dashed var(--line); padding-top:1rem;
+    font-size:.9rem; font-variant-numeric:tabular-nums }
+  .hist table { border-collapse:collapse; width:100% }
+  .hist td { padding:.2rem 0; color:var(--muted) }
+  .hist td:last-child { text-align:right; color:var(--ink); font-weight:600 }
+  .hist .low { color:var(--drop) }
+  .hist .note { color:var(--muted) }
+  .hist svg { display:block; width:100%; height:56px; margin:.5rem 0 .75rem }
+  @media (prefers-reduced-motion: reduce) { .cta { transition:none } .cta:hover { transform:none } }
+  .follow { margin-top:2.75rem; text-align:center; background:var(--sticker); color:#2B1B12;
+    border-radius:16px; padding:1.5rem 1.25rem; transform:rotate(.6deg) }
+  .follow p { margin:0 0 .7rem; font-weight:600; font-family:"Mitr",sans-serif; font-size:1.15rem }
+  .follow a { color:#2B1B12; font-weight:600; text-decoration:underline; text-underline-offset:3px }
+  footer { margin-top:2.5rem; color:var(--muted); font-size:.82rem; text-align:center; text-wrap:balance }
 </style>
 </head>
 <body>
-
 <div class="wrap">
   <header>
     <h1 class="tag">ช้อปถูกบอกด้วย</h1>
-    <p class="tagline"><strong>เจอของถูก เอามาบอกต่อ</strong> — คัดดีล Shopee + Lazada ที่ลดจริง ขายดีจริง อัปเดตเรื่อย ๆ ราคาอาจเปลี่ยนได้ รีบจัดก่อนของหมด</p>
+    <p class="tagline"><strong>เจอของถูก เอามาบอกต่อ</strong> — คัดดีล Shopee + Lazada ที่ลดจริง ขายดีจริง
+    ทุกชิ้นมี<strong>ประวัติราคา</strong>ให้ดูก่อนตัดสินใจ ราคาอาจเปลี่ยนได้ รีบจัดก่อนของหมด</p>
   </header>
 
   <main>
-    <article class="coupon">
+    <article class="coupon" id="totori" data-key="totori">
       <div class="coupon-top">
         <h2>หมอนโตโตโร่ รุ่น Cloud นุ่มปุกปิก</h2>
         <span class="chip">-76%</span>
@@ -227,10 +102,14 @@
         <span class="was">฿517</span>
       </div>
       <p class="why">ตัวการ์ตูนในตำนาน นุ่มจนไม่อยากลุกจากที่นอน ราคานี้คือถูกสุดที่เคยเห็น</p>
-      <a class="cta" href="https://s.shopee.co.th/112WZi9pUX" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/112WZi9pUX" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="totori" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-totori" hidden></div>
     </article>
 
-    <article class="coupon">
+    <article class="coupon" id="tyeso" data-key="tyeso">
       <div class="coupon-top">
         <h2>TYESO แก้วเก็บความเย็น 600/750ml</h2>
         <span class="chip">-51%</span>
@@ -241,10 +120,14 @@
         <span class="was">฿794</span>
       </div>
       <p class="why">น้ำแข็งอยู่ข้ามวันจริง สายกาแฟ-ชาเย็นต้องมีติดโต๊ะ</p>
-      <a class="cta" href="https://s.shopee.co.th/8AVh6ffcJA" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/8AVh6ffcJA" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="tyeso" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-tyeso" hidden></div>
     </article>
 
-    <article class="coupon">
+    <article class="coupon" id="onikuma" data-key="onikuma">
       <div class="coupon-top">
         <h2>ONIKUMA HOKO ไมค์ USB ตั้งโต๊ะ</h2>
         <span class="chip">ขายดี</span>
@@ -255,10 +138,14 @@
         <span class="was">฿990</span>
       </div>
       <p class="why">เสียงคมชัดเกินราคา สายสตรีม เล่นเกม ประชุมออนไลน์ จบในตัวเดียว</p>
-      <a class="cta" href="https://s.shopee.co.th/6Akcj4FnJ1" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/6Akcj4FnJ1" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="onikuma" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-onikuma" hidden></div>
     </article>
 
-    <article class="coupon">
+    <article class="coupon" id="hs" data-key="hs">
       <div class="coupon-top">
         <h2>Head &amp; Shoulders แชมพูขจัดรังแค 370ml แพ็คคู่</h2>
         <span class="chip">-50%</span>
@@ -269,10 +156,14 @@
         <span class="was">฿396</span>
       </div>
       <p class="why">แพ็คคู่คุ้มกว่า สูตรเมนทอลเย็นสดชื่น ตัวขายดีตลอดกาล</p>
-      <a class="cta" href="https://s.shopee.co.th/4VcOlvj9VK" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/4VcOlvj9VK" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="hs" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-hs" hidden></div>
     </article>
 
-    <article class="coupon">
+    <article class="coupon" id="cerave" data-key="cerave">
       <div class="coupon-top">
         <h2>CERAVE Moisturising Cream 50ml</h2>
         <span class="chip">ขายดี</span>
@@ -282,10 +173,14 @@
         <span class="price">฿225</span>
       </div>
       <p class="why">ครีมบำรุงตัวดังที่หมอผิวแนะนำ ใช้ได้ทั้งหน้าและตัว</p>
-      <a class="cta" href="https://s.shopee.co.th/9fKUvQl06F" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/9fKUvQl06F" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="cerave" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-cerave" hidden></div>
     </article>
 
-    <article class="coupon">
+    <article class="coupon" id="oralb" data-key="oralb">
       <div class="coupon-top">
         <h2>Oral-B แปรงสีฟันไฟฟ้า DB5</h2>
         <span class="chip">-12%</span>
@@ -296,10 +191,66 @@
         <span class="was">฿552</span>
       </div>
       <p class="why">อัปเกรดช่องปากในราคาหลักร้อย แบตอึด หัวแปรงเปลี่ยนได้</p>
-      <a class="cta" href="https://s.shopee.co.th/8V8XXIBmgs" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/8V8XXIBmgs" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="oralb" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-oralb" hidden></div>
     </article>
 
-    <article class="coupon">
+    <article class="coupon" id="downy" data-key="downy">
+      <div class="coupon-top">
+        <h2>Downy น้ำยาปรับผ้านุ่มเข้มข้น 950มล. [4 แถม 2]</h2>
+        <span class="chip">ขายดี</span>
+      </div>
+      <p class="sold">ขายแล้ว 300,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿714</span>
+      </div>
+      <p class="why">กลิ่นหอมติดผ้านาน โปรซื้อ 4 แถม 2 เฉลี่ยต่อถุงคุ้มมาก</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/6L4315RjY1" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="downy" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-downy" hidden></div>
+    </article>
+
+    <article class="coupon" id="mizumi" data-key="mizumi">
+      <div class="coupon-top">
+        <h2>MizuMI UV Bright Body Serum 180ml</h2>
+        <span class="chip">-41%</span>
+      </div>
+      <p class="sold">ขายแล้ว 200,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿459</span>
+        <span class="was">฿778</span>
+      </div>
+      <p class="why">กันแดดผิวกายตัวดัง SPF50+ เกลี่ยง่ายไม่วอก</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/9fKUzHGw0P" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="mizumi" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-mizumi" hidden></div>
+    </article>
+
+    <article class="coupon" id="op" data-key="op">
+      <div class="coupon-top">
+        <h2>Oriental Princess โลชั่นบำรุงผิว 390ml</h2>
+        <span class="chip">ขายดี</span>
+      </div>
+      <p class="sold">ขายแล้ว 100,000++ ชิ้น</p>
+      <div class="price-row">
+        <span class="price">฿148</span>
+      </div>
+      <p class="why">โลชั่นกลิ่นหอมละมุน แพ็คเกจใหม่ ราคาน่ารักมาก</p>
+      <div class="actions">
+        <a class="cta" href="https://s.shopee.co.th/3LQRRbP9CX" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="op" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-op" hidden></div>
+    </article>
+
+    <article class="coupon" id="lenodi" data-key="lenodi">
       <div class="coupon-top">
         <h2>ตู้เย็น LENODI 5.2Q 2 ประตู</h2>
         <span class="chip">Lazada</span>
@@ -309,7 +260,11 @@
         <span class="price">ดีลพิเศษ</span>
       </div>
       <p class="why">ตู้เย็นสองประตูไซซ์กะทัดรัด เหมาะหอพัก-ออฟฟิศ กดดูราคาล่าสุดในลิงก์</p>
-      <a class="cta" href="https://s.lazada.co.th/s.Z8ouKK" target="_blank" rel="noopener">รับดีลนี้ →</a>
+      <div class="actions">
+        <a class="cta" href="https://s.lazada.co.th/s.Z8ouKK" target="_blank" rel="noopener">รับดีลนี้ →</a>
+        <button class="hist-btn" data-key="lenodi" type="button">📈 ประวัติราคา</button>
+      </div>
+      <div class="hist" id="hist-lenodi" hidden></div>
     </article>
   </main>
 
@@ -319,10 +274,71 @@
   </div>
 
   <footer>
-    ราคา ณ วันที่ 30 ส.ค. 2569 อาจเปลี่ยนแปลงได้ · ลิงก์ในหน้านี้เป็นลิงก์ affiliate
+    ราคาอัปเดตตามรอบสำรวจของทีมงาน อาจเปลี่ยนแปลงได้ · ลิงก์ในหน้านี้เป็นลิงก์ affiliate
     เพจได้ค่าคอมมิชชั่นเล็กน้อยเมื่อช้อปผ่านลิงก์ โดยไม่กระทบราคาที่คุณจ่าย
   </footer>
 </div>
 
+<script>
+(function () {
+  var THB = function (n) { return "฿" + n.toLocaleString("en-US"); };
+  var TH_MONTHS = ["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+  function thDate(iso) {
+    var p = iso.split("-");
+    return Number(p[2]) + " " + TH_MONTHS[Number(p[1]) - 1] + " " + (Number(p[0]) + 543 - 2500);
+  }
+  function sparkline(points) {
+    if (points.length < 2) return "";
+    var vals = points.map(function (p) { return p[1]; });
+    var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+    var span = max - min || 1, W = 300, H = 48, PAD = 4;
+    var step = (W - PAD * 2) / (points.length - 1);
+    var d = points.map(function (p, i) {
+      var x = PAD + i * step;
+      var y = PAD + (H - PAD * 2) * (1 - (p[1] - min) / span);
+      return (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+    }).join(" ");
+    var last = points[points.length - 1];
+    var lx = PAD + (points.length - 1) * step;
+    var ly = PAD + (H - PAD * 2) * (1 - (last[1] - min) / span);
+    return '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" role="img" aria-label="กราฟราคา">' +
+      '<path d="' + d + '" fill="none" stroke="var(--deal)" stroke-width="2.5" stroke-linecap="round"/>' +
+      '<circle cx="' + lx + '" cy="' + ly + '" r="4" fill="var(--deal)"/></svg>';
+  }
+  var data = null;
+  function render(key, box) {
+    var prod = data && data.products && data.products[key];
+    if (!prod) { box.innerHTML = '<p class="note">ยังไม่มีข้อมูลราคา</p>'; return; }
+    var pts = prod.points || [];
+    if (!pts.length) { box.innerHTML = '<p class="note">สินค้านี้ยังไม่มีบันทึกราคา (กดลิงก์เพื่อดูราคาล่าสุดในร้าน)</p>'; return; }
+    var minVal = Math.min.apply(null, pts.map(function (p) { return p[1]; }));
+    var rows = pts.slice().reverse().map(function (p) {
+      var lowMark = p[1] === minVal ? ' <span class="low">● ต่ำสุดที่เคยเจอ</span>' : "";
+      return "<tr><td>" + thDate(p[0]) + lowMark + "</td><td>" + THB(p[1]) + "</td></tr>";
+    }).join("");
+    box.innerHTML = sparkline(pts) + "<table>" + rows + "</table>";
+  }
+  function open(key) {
+    var box = document.getElementById("hist-" + key);
+    if (!box) return;
+    box.hidden = false;
+    if (data) { render(key, box); return; }
+    box.innerHTML = '<p class="note">กำลังโหลด…</p>';
+    fetch("prices.json", { cache: "no-store" })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { data = j; render(key, box); })
+      .catch(function () { box.innerHTML = '<p class="note">โหลดข้อมูลไม่สำเร็จ</p>'; });
+  }
+  document.querySelectorAll(".hist-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var box = document.getElementById("hist-" + btn.dataset.key);
+      if (box && !box.hidden) { box.hidden = true; return; }
+      open(btn.dataset.key);
+    });
+  });
+  var hash = location.hash.replace("#", "");
+  if (hash && document.getElementById(hash)) { open(hash); }
+})();
+</script>
 </body>
 </html>
