@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-20",
   "products": {
     "totori": {
       "name": "หมอนโตโตโร่ รุ่น Cloud",
@@ -375,6 +375,16 @@
         [
           "2026-09-18",
           1958
+        ]
+      ]
+    },
+    "atk": {
+      "name": "ชุดตรวจ ATK 4in1 Gica Testsealabs",
+      "buy": "https://s.shopee.co.th/4VcPYTw67u",
+      "points": [
+        [
+          "2026-09-20",
+          79
         ]
       ]
     }
