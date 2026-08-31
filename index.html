@@ -931,8 +931,9 @@ async function loadPrices(){
 }
 function cleanPoints(raw){
   if (!raw || !raw.length) return [];
-  const today = new Date().toISOString().slice(0,10);
-  let pts = raw.filter(p => p && p[0] && p[0] <= today);   /* กันจุดที่ลงวันที่ล่วงหน้า ซึ่งเป็นไปไม่ได้ */
+  const d = new Date(Date.now() + 86400000);               /* เผื่อ timezone 1 วัน กันตัดจุดของวันนี้ทิ้ง */
+  const cutoff = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  let pts = raw.filter(p => p && p[0] && p[0] <= cutoff);  /* กันจุดที่ลงวันที่ล่วงหน้า ซึ่งเป็นไปไม่ได้ */
   if (!pts.length) pts = raw.slice();
   pts = pts.slice().sort((a,b)=> a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0);  /* เรียงตามวันที่จริง */
   const byDay = new Map();
