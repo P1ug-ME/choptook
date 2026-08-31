@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-26",
  "products": {
   "totori": {
    "name": "หมอนโตโตโร่ รุ่น Cloud",
@@ -445,6 +445,16 @@
     [
      "2026-10-24",
      199
+    ]
+   ]
+  },
+  "floss": {
+   "name": "Dentiste ไหมขัดฟันด้ามจับ 40 ชิ้น (แพ็ค 3)",
+   "buy": "https://s.shopee.co.th/4qFGMDJeYq",
+   "points": [
+    [
+     "2026-10-26",
+     229
     ]
    ]
   }
