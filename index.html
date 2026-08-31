@@ -929,8 +929,19 @@ async function loadPrices(){
   try { PRICES = await (await fetch('prices.json')).json(); } catch(e){ PRICES = {products:{}}; }
   return PRICES;
 }
-function chartSVG(points){
-  if (!points || points.length === 0) return '<p class="hist-meta">ยังไม่มีจุดราคาบันทึก — ระบบจะเริ่มเก็บเมื่อเห็นราคาชิ้นนี้ครั้งถัดไป</p>';
+function cleanPoints(raw){
+  if (!raw || !raw.length) return [];
+  const today = new Date().toISOString().slice(0,10);
+  let pts = raw.filter(p => p && p[0] && p[0] <= today);   /* กันจุดที่ลงวันที่ล่วงหน้า ซึ่งเป็นไปไม่ได้ */
+  if (!pts.length) pts = raw.slice();
+  pts = pts.slice().sort((a,b)=> a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0);  /* เรียงตามวันที่จริง */
+  const byDay = new Map();
+  pts.forEach(p => byDay.set(p[0], p[1]));                 /* วันเดียวกันเก็บค่าท้ายสุด */
+  return [...byDay.entries()].map(([d,v]) => [d,v]);
+}
+function chartSVG(rawPoints){
+  const points = cleanPoints(rawPoints);
+  if (!points.length) return '<p class="hist-meta">ยังไม่มีจุดราคาบันทึก — ระบบจะเริ่มเก็บเมื่อเห็นราคาชิ้นนี้ครั้งถัดไป</p>';
   const vals = points.map(p=>p[1]);
   const min = Math.min(...vals), max = Math.max(...vals);
   const W=640, H=180, P=34, n=points.length;
@@ -973,10 +984,14 @@ async function renderDetail(key){
   const rec = data.products && data.products[key];
   const box = document.getElementById('histbox');
   if (rec && rec.points && rec.points.length){
-    const lowest = Math.min(...rec.points.map(pt=>pt[1]));
+    const shown = cleanPoints(rec.points);
+    const dropped = rec.points.length - shown.length;
+    const lowest = Math.min(...shown.map(pt=>pt[1]));
     box.innerHTML = chartSVG(rec.points)
       + '<p class="hist-meta">ราคาต่ำสุดที่เคยเห็น: <b>'+money(lowest)+'</b> · '
-      + rec.points.length + ' จุดข้อมูล (บันทึกเมื่อราคาเปลี่ยน)</p>';
+      + shown.length + ' จุดข้อมูล (บันทึกเมื่อราคาเปลี่ยน)'
+      + (dropped>0 ? ' · <span style="opacity:.8">ซ่อน '+dropped+' จุดที่วันที่ผิดพลาดจากตอนเริ่มระบบ</span>' : '')
+      + '</p>';
   } else box.innerHTML = chartSVG(null);
 }
 
