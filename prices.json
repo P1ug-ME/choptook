@@ -1,442 +1,452 @@
 {
-  "updated": "2026-10-22",
-  "products": {
-    "totori": {
-      "name": "หมอนโตโตโร่ รุ่น Cloud",
-      "buy": "https://s.shopee.co.th/112WZi9pUX",
-      "points": [
-        [
-          "2026-08-30",
-          124
-        ]
-      ]
-    },
-    "tyeso": {
-      "name": "TYESO แก้วเก็บความเย็น 600/750ml",
-      "buy": "https://s.shopee.co.th/8AVh6ffcJA",
-      "points": [
-        [
-          "2026-08-30",
-          389
-        ],
-        [
-          "2026-09-01",
-          310
-        ],
-        [
-          "2026-10-22",
-          389
-        ]
-      ]
-    },
-    "onikuma": {
-      "name": "ONIKUMA HOKO ไมค์ USB",
-      "buy": "https://s.shopee.co.th/6Akcj4FnJ1",
-      "points": [
-        [
-          "2026-08-30",
-          939
-        ]
-      ]
-    },
-    "hs": {
-      "name": "Head & Shoulders 370ml x2",
-      "buy": "https://s.shopee.co.th/4VcOlvj9VK",
-      "points": [
-        [
-          "2026-08-30",
-          198
-        ],
-        [
-          "2026-08-30",
-          219
-        ],
-        [
-          "2026-09-01",
-          188
-        ],
-        [
-          "2026-10-22",
-          198
-        ]
-      ]
-    },
-    "cerave": {
-      "name": "CERAVE Moisturising Cream 50ml",
-      "buy": "https://s.shopee.co.th/9fKUvQl06F",
-      "points": [
-        [
-          "2026-08-30",
-          225
-        ]
-      ]
-    },
-    "oralb": {
-      "name": "Oral-B แปรงสีฟันไฟฟ้า DB5",
-      "buy": "https://s.shopee.co.th/8V8XXIBmgs",
-      "points": [
-        [
-          "2026-08-30",
-          486
-        ],
-        [
-          "2026-09-01",
-          426
-        ],
-        [
-          "2026-10-22",
-          486
-        ]
-      ]
-    },
-    "downy": {
-      "name": "Downy น้ำยาปรับผ้านุ่ม 950มล.",
-      "buy": "https://s.shopee.co.th/6L4315RjY1",
-      "points": [
-        [
-          "2026-08-30",
-          714
-        ],
-        [
-          "2026-09-01",
-          567
-        ],
-        [
-          "2026-10-22",
-          714
-        ]
-      ]
-    },
-    "mizumi": {
-      "name": "MizuMI UV Bright Body Serum",
-      "buy": "https://s.shopee.co.th/9fKUzHGw0P",
-      "points": [
-        [
-          "2026-08-30",
-          459
-        ],
-        [
-          "2026-09-01",
-          351
-        ]
-      ]
-    },
-    "op": {
-      "name": "Oriental Princess โลชั่น 390ml",
-      "buy": "https://s.shopee.co.th/3LQRRbP9CX",
-      "points": [
-        [
-          "2026-08-30",
-          148
-        ]
-      ]
-    },
-    "lenodi": {
-      "name": "ตู้เย็น LENODI 5.2Q (Lazada)",
-      "buy": "https://s.lazada.co.th/s.Z8ouKK",
-      "points": []
-    },
-    "systema": {
-      "name": "SYSTEMA แปรงสีฟัน 6 ด้าม",
-      "buy": "https://s.shopee.co.th/9V14oIkJeO",
-      "points": [
-        [
-          "2026-08-30",
-          235
-        ]
-      ]
-    },
-    "chair": {
-      "name": "เก้าอี้มหัศจรรย์ตาแสวง รับ 100KG",
-      "buy": "https://s.shopee.co.th/9AOES70PHR",
-      "points": [
-        [
-          "2026-08-30",
-          845
-        ],
-        [
-          "2026-08-30",
-          852
-        ],
-        [
-          "2026-09-01",
-          801
-        ],
-        [
-          "2026-10-22",
-          845
-        ]
-      ]
-    },
-    "seagull": {
-      "name": "Seagull เครื่องต้มไข่ อีซี่ ไลฟ์ (4 ฟอง)",
-      "buy": "https://s.shopee.co.th/3g3Hz9ae4I",
-      "points": [
-        [
-          "2026-08-30",
-          549
-        ],
-        [
-          "2026-09-01",
-          599
-        ],
-        [
-          "2026-09-03",
-          549
-        ],
-        [
-          "2026-09-16",
-          539
-        ],
-        [
-          "2026-10-22",
-          549
-        ]
-      ]
-    },
-    "whiskas": {
-      "name": "WHISKAS อาหารเปียกแมว [48 ฟรี 12]",
-      "buy": "https://s.shopee.co.th/9pdvKZ7mU7",
-      "points": [
-        [
-          "2026-08-30",
-          935
-        ],
-        [
-          "2026-09-01",
-          913
-        ],
-        [
-          "2026-10-22",
-          935
-        ]
-      ]
-    },
-    "nivea": {
-      "name": "NIVEA Luminous630 สกิน โกลว์ เซรั่ม",
-      "buy": "https://s.shopee.co.th/60RCmAAcFr",
-      "points": [
-        [
-          "2026-08-30",
-          446
-        ],
-        [
-          "2026-09-01",
-          370
-        ],
-        [
-          "2026-10-18",
-          446
-        ]
-      ]
-    },
-    "vaseline": {
-      "name": "Vaseline Healthy Bright โลชั่น [แพ็คคู่]",
-      "buy": "https://s.shopee.co.th/2qUB1ofs31",
-      "points": [
-        [
-          "2026-08-30",
-          319
-        ],
-        [
-          "2026-09-01",
-          277
-        ],
-        [
-          "2026-09-04",
-          319
-        ]
-      ]
-    },
-    "warrix": {
-      "name": "WARRIX เสื้อ THAILAND OVERSIZE JERSEY",
-      "buy": "https://s.shopee.co.th/3LQRckNc9P",
-      "points": [
-        [
-          "2026-08-30",
-          534
-        ],
-        [
-          "2026-09-01",
-          464
-        ]
-      ]
-    },
-    "sunlight": {
-      "name": "ซันไลต์ น้ำยาล้างจาน [แพ็คคู่ 2800-3200มล.]",
-      "buy": "https://s.shopee.co.th/3VjrvenQbI",
-      "points": [
-        [
-          "2026-08-30",
-          350
-        ]
-      ]
-    },
-    "matcha": {
-      "name": "ผงมัทฉะนิชิโอะ เกรดพรีเมียม Noko 100g",
-      "buy": "https://s.shopee.co.th/1VynZ6qHD8",
-      "points": [
-        [
-          "2026-08-30",
-          739
-        ]
-      ]
-    },
-    "yangban": {
-      "name": "YANGBAN สาหร่ายเกาหลี ยกลัง",
-      "buy": "https://s.shopee.co.th/8plOJGO1uC",
-      "points": [
-        [
-          "2026-08-30",
-          1099
-        ]
-      ]
-    },
-    "diffuser": {
-      "name": "Hanky House ก้านไม้หอม Reed Diffuser",
-      "buy": "https://s.shopee.co.th/19zoEmsYW",
-      "points": [
-        [
-          "2026-08-30",
-          179
-        ],
-        [
-          "2026-09-01",
-          163
-        ],
-        [
-          "2026-10-22",
-          171
-        ]
-      ]
-    },
-    "magiclean": {
-      "name": "มาจิคลีน น้ำยาถูพื้น 5 ลิตร (KAO)",
-      "buy": "https://s.shopee.co.th/4fvpTyx1pR",
-      "points": [
-        [
-          "2026-08-30",
-          187
-        ]
-      ]
-    },
-    "dentiste": {
-      "name": "Dentiste' ยาสีฟันกลางคืน 90g x2 ฟรี 50g",
-      "buy": "https://s.shopee.co.th/9AOEqu2vNb",
-      "points": [
-        [
-          "2026-08-30",
-          395
-        ],
-        [
-          "2026-08-31",
-          380
-        ],
-        [
-          "2026-10-22",
-          395
-        ]
-      ]
-    },
-    "lrp": {
-      "name": "La Roche-Posay Cicaplast Baume B5+ 40ml",
-      "buy": "https://s.shopee.co.th/8Kp7sxOSlm",
-      "points": [
-        [
-          "2026-08-30",
-          518
-        ]
-      ]
-    },
-    "kingsstella": {
-      "name": "King's Stella เจลหอมปรับอากาศ 180g",
-      "buy": "https://s.shopee.co.th/50YfvVpbVi",
-      "points": [
-        [
-          "2026-08-31",
-          84
-        ]
-      ]
-    },
-    "pallas": {
-      "name": "Pallas Foot Care Spray 150ml",
-      "buy": "https://s.shopee.co.th/4AzYxD0dsA",
-      "points": [
-        [
-          "2026-09-02",
-          179
-        ]
-      ]
-    },
-    "naturista": {
-      "name": "Naturista เจลล้างหน้าชาขาว 300ml",
-      "buy": "https://s.shopee.co.th/5VUwYPceMx",
-      "points": [
-        [
-          "2026-09-03",
-          89
-        ]
-      ]
-    },
-    "kirei": {
-      "name": "Kirei Kirei โฟมล้างมือ ถุงเติม 200ml x3",
-      "buy": "https://s.shopee.co.th/6L43a8pHNB",
-      "points": [
-        [
-          "2026-09-06",
-          79
-        ]
-      ]
-    },
-    "siriraj": {
-      "name": "ศิริราช มายด์ แชมพู หัวปั๊ม 200ml",
-      "buy": "https://s.shopee.co.th/30nbc0APrM",
-      "points": [
-        [
-          "2026-09-06",
-          130
-        ]
-      ]
-    },
-    "indomie": {
-      "name": "Indomie หมี่โกเรง ยกลัง 40 ซอง",
-      "buy": "https://s.shopee.co.th/1qbeKcwAI3",
-      "points": [
-        [
-          "2026-09-16",
-          480
-        ]
-      ]
-    },
-    "xtep": {
-      "name": "XTEP 2000KM 5.0 รองเท้าวิ่ง",
-      "buy": "https://s.shopee.co.th/6q0KJRgk1z",
-      "points": [
-        [
-          "2026-09-18",
-          1958
-        ]
-      ]
-    },
-    "atk": {
-      "name": "ชุดตรวจ ATK 4in1 Gica Testsealabs",
-      "buy": "https://s.shopee.co.th/4VcPYTw67u",
-      "points": [
-        [
-          "2026-09-20",
-          79
-        ]
-      ]
-    },
-    "coldbrew": {
-      "name": "Mix & Go Cold Brew Concentrate 1,000ml",
-      "buy": "https://s.shopee.co.th/2qUBaDxqnR",
-      "points": [
-        [
-          "2026-09-21",
-          250
-        ]
-      ]
-    }
+ "updated": "2026-10-24",
+ "products": {
+  "totori": {
+   "name": "หมอนโตโตโร่ รุ่น Cloud",
+   "buy": "https://s.shopee.co.th/112WZi9pUX",
+   "points": [
+    [
+     "2026-08-30",
+     124
+    ]
+   ]
+  },
+  "tyeso": {
+   "name": "TYESO แก้วเก็บความเย็น 600/750ml",
+   "buy": "https://s.shopee.co.th/8AVh6ffcJA",
+   "points": [
+    [
+     "2026-08-30",
+     389
+    ],
+    [
+     "2026-09-01",
+     310
+    ],
+    [
+     "2026-10-22",
+     389
+    ]
+   ]
+  },
+  "onikuma": {
+   "name": "ONIKUMA HOKO ไมค์ USB",
+   "buy": "https://s.shopee.co.th/6Akcj4FnJ1",
+   "points": [
+    [
+     "2026-08-30",
+     939
+    ]
+   ]
+  },
+  "hs": {
+   "name": "Head & Shoulders 370ml x2",
+   "buy": "https://s.shopee.co.th/4VcOlvj9VK",
+   "points": [
+    [
+     "2026-08-30",
+     198
+    ],
+    [
+     "2026-08-30",
+     219
+    ],
+    [
+     "2026-09-01",
+     188
+    ],
+    [
+     "2026-10-22",
+     198
+    ]
+   ]
+  },
+  "cerave": {
+   "name": "CERAVE Moisturising Cream 50ml",
+   "buy": "https://s.shopee.co.th/9fKUvQl06F",
+   "points": [
+    [
+     "2026-08-30",
+     225
+    ]
+   ]
+  },
+  "oralb": {
+   "name": "Oral-B แปรงสีฟันไฟฟ้า DB5",
+   "buy": "https://s.shopee.co.th/8V8XXIBmgs",
+   "points": [
+    [
+     "2026-08-30",
+     486
+    ],
+    [
+     "2026-09-01",
+     426
+    ],
+    [
+     "2026-10-22",
+     486
+    ]
+   ]
+  },
+  "downy": {
+   "name": "Downy น้ำยาปรับผ้านุ่ม 950มล.",
+   "buy": "https://s.shopee.co.th/6L4315RjY1",
+   "points": [
+    [
+     "2026-08-30",
+     714
+    ],
+    [
+     "2026-09-01",
+     567
+    ],
+    [
+     "2026-10-22",
+     714
+    ]
+   ]
+  },
+  "mizumi": {
+   "name": "MizuMI UV Bright Body Serum",
+   "buy": "https://s.shopee.co.th/9fKUzHGw0P",
+   "points": [
+    [
+     "2026-08-30",
+     459
+    ],
+    [
+     "2026-09-01",
+     351
+    ]
+   ]
+  },
+  "op": {
+   "name": "Oriental Princess โลชั่น 390ml",
+   "buy": "https://s.shopee.co.th/3LQRRbP9CX",
+   "points": [
+    [
+     "2026-08-30",
+     148
+    ]
+   ]
+  },
+  "lenodi": {
+   "name": "ตู้เย็น LENODI 5.2Q (Lazada)",
+   "buy": "https://s.lazada.co.th/s.Z8ouKK",
+   "points": []
+  },
+  "systema": {
+   "name": "SYSTEMA แปรงสีฟัน 6 ด้าม",
+   "buy": "https://s.shopee.co.th/9V14oIkJeO",
+   "points": [
+    [
+     "2026-08-30",
+     235
+    ]
+   ]
+  },
+  "chair": {
+   "name": "เก้าอี้มหัศจรรย์ตาแสวง รับ 100KG",
+   "buy": "https://s.shopee.co.th/9AOES70PHR",
+   "points": [
+    [
+     "2026-08-30",
+     845
+    ],
+    [
+     "2026-08-30",
+     852
+    ],
+    [
+     "2026-09-01",
+     801
+    ],
+    [
+     "2026-10-22",
+     845
+    ]
+   ]
+  },
+  "seagull": {
+   "name": "Seagull เครื่องต้มไข่ อีซี่ ไลฟ์ (4 ฟอง)",
+   "buy": "https://s.shopee.co.th/3g3Hz9ae4I",
+   "points": [
+    [
+     "2026-08-30",
+     549
+    ],
+    [
+     "2026-09-01",
+     599
+    ],
+    [
+     "2026-09-03",
+     549
+    ],
+    [
+     "2026-09-16",
+     539
+    ],
+    [
+     "2026-10-22",
+     549
+    ]
+   ]
+  },
+  "whiskas": {
+   "name": "WHISKAS อาหารเปียกแมว [48 ฟรี 12]",
+   "buy": "https://s.shopee.co.th/9pdvKZ7mU7",
+   "points": [
+    [
+     "2026-08-30",
+     935
+    ],
+    [
+     "2026-09-01",
+     913
+    ],
+    [
+     "2026-10-22",
+     935
+    ]
+   ]
+  },
+  "nivea": {
+   "name": "NIVEA Luminous630 สกิน โกลว์ เซรั่ม",
+   "buy": "https://s.shopee.co.th/60RCmAAcFr",
+   "points": [
+    [
+     "2026-08-30",
+     446
+    ],
+    [
+     "2026-09-01",
+     370
+    ],
+    [
+     "2026-10-18",
+     446
+    ]
+   ]
+  },
+  "vaseline": {
+   "name": "Vaseline Healthy Bright โลชั่น [แพ็คคู่]",
+   "buy": "https://s.shopee.co.th/2qUB1ofs31",
+   "points": [
+    [
+     "2026-08-30",
+     319
+    ],
+    [
+     "2026-09-01",
+     277
+    ],
+    [
+     "2026-09-04",
+     319
+    ]
+   ]
+  },
+  "warrix": {
+   "name": "WARRIX เสื้อ THAILAND OVERSIZE JERSEY",
+   "buy": "https://s.shopee.co.th/3LQRckNc9P",
+   "points": [
+    [
+     "2026-08-30",
+     534
+    ],
+    [
+     "2026-09-01",
+     464
+    ]
+   ]
+  },
+  "sunlight": {
+   "name": "ซันไลต์ น้ำยาล้างจาน [แพ็คคู่ 2800-3200มล.]",
+   "buy": "https://s.shopee.co.th/3VjrvenQbI",
+   "points": [
+    [
+     "2026-08-30",
+     350
+    ]
+   ]
+  },
+  "matcha": {
+   "name": "ผงมัทฉะนิชิโอะ เกรดพรีเมียม Noko 100g",
+   "buy": "https://s.shopee.co.th/1VynZ6qHD8",
+   "points": [
+    [
+     "2026-08-30",
+     739
+    ]
+   ]
+  },
+  "yangban": {
+   "name": "YANGBAN สาหร่ายเกาหลี ยกลัง",
+   "buy": "https://s.shopee.co.th/8plOJGO1uC",
+   "points": [
+    [
+     "2026-08-30",
+     1099
+    ]
+   ]
+  },
+  "diffuser": {
+   "name": "Hanky House ก้านไม้หอม Reed Diffuser",
+   "buy": "https://s.shopee.co.th/19zoEmsYW",
+   "points": [
+    [
+     "2026-08-30",
+     179
+    ],
+    [
+     "2026-09-01",
+     163
+    ],
+    [
+     "2026-10-22",
+     171
+    ]
+   ]
+  },
+  "magiclean": {
+   "name": "มาจิคลีน น้ำยาถูพื้น 5 ลิตร (KAO)",
+   "buy": "https://s.shopee.co.th/4fvpTyx1pR",
+   "points": [
+    [
+     "2026-08-30",
+     187
+    ]
+   ]
+  },
+  "dentiste": {
+   "name": "Dentiste' ยาสีฟันกลางคืน 90g x2 ฟรี 50g",
+   "buy": "https://s.shopee.co.th/9AOEqu2vNb",
+   "points": [
+    [
+     "2026-08-30",
+     395
+    ],
+    [
+     "2026-08-31",
+     380
+    ],
+    [
+     "2026-10-22",
+     395
+    ]
+   ]
+  },
+  "lrp": {
+   "name": "La Roche-Posay Cicaplast Baume B5+ 40ml",
+   "buy": "https://s.shopee.co.th/8Kp7sxOSlm",
+   "points": [
+    [
+     "2026-08-30",
+     518
+    ]
+   ]
+  },
+  "kingsstella": {
+   "name": "King's Stella เจลหอมปรับอากาศ 180g",
+   "buy": "https://s.shopee.co.th/50YfvVpbVi",
+   "points": [
+    [
+     "2026-08-31",
+     84
+    ]
+   ]
+  },
+  "pallas": {
+   "name": "Pallas Foot Care Spray 150ml",
+   "buy": "https://s.shopee.co.th/4AzYxD0dsA",
+   "points": [
+    [
+     "2026-09-02",
+     179
+    ]
+   ]
+  },
+  "naturista": {
+   "name": "Naturista เจลล้างหน้าชาขาว 300ml",
+   "buy": "https://s.shopee.co.th/5VUwYPceMx",
+   "points": [
+    [
+     "2026-09-03",
+     89
+    ]
+   ]
+  },
+  "kirei": {
+   "name": "Kirei Kirei โฟมล้างมือ ถุงเติม 200ml x3",
+   "buy": "https://s.shopee.co.th/6L43a8pHNB",
+   "points": [
+    [
+     "2026-09-06",
+     79
+    ]
+   ]
+  },
+  "siriraj": {
+   "name": "ศิริราช มายด์ แชมพู หัวปั๊ม 200ml",
+   "buy": "https://s.shopee.co.th/30nbc0APrM",
+   "points": [
+    [
+     "2026-09-06",
+     130
+    ]
+   ]
+  },
+  "indomie": {
+   "name": "Indomie หมี่โกเรง ยกลัง 40 ซอง",
+   "buy": "https://s.shopee.co.th/1qbeKcwAI3",
+   "points": [
+    [
+     "2026-09-16",
+     480
+    ]
+   ]
+  },
+  "xtep": {
+   "name": "XTEP 2000KM 5.0 รองเท้าวิ่ง",
+   "buy": "https://s.shopee.co.th/6q0KJRgk1z",
+   "points": [
+    [
+     "2026-09-18",
+     1958
+    ]
+   ]
+  },
+  "atk": {
+   "name": "ชุดตรวจ ATK 4in1 Gica Testsealabs",
+   "buy": "https://s.shopee.co.th/4VcPYTw67u",
+   "points": [
+    [
+     "2026-09-20",
+     79
+    ]
+   ]
+  },
+  "coldbrew": {
+   "name": "Mix & Go Cold Brew Concentrate 1,000ml",
+   "buy": "https://s.shopee.co.th/2qUBaDxqnR",
+   "points": [
+    [
+     "2026-09-21",
+     250
+    ]
+   ]
+  },
+  "botare": {
+   "name": "Botare Air Cushion ทิชชู่ 4 ชั้น ยกลัง 20 ห่อ",
+   "buy": "https://s.shopee.co.th/3VjskRECQR",
+   "points": [
+    [
+     "2026-10-24",
+     199
+    ]
+   ]
   }
+ }
 }
