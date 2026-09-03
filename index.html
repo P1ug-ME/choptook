@@ -952,11 +952,20 @@ function cleanPoints(raw){
   const d = new Date(Date.now() + 86400000);               /* เผื่อ timezone 1 วัน กันตัดจุดของวันนี้ทิ้ง */
   const cutoff = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
   let pts = raw.filter(p => p && p[0] && p[0] <= cutoff);  /* กันจุดที่ลงวันที่ล่วงหน้า ซึ่งเป็นไปไม่ได้ */
-  if (!pts.length) pts = raw.slice();
-  pts = pts.slice().sort((a,b)=> a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0);  /* เรียงตามวันที่จริง */
-  const byDay = new Map();
-  pts.forEach(p => byDay.set(p[0], p[1]));                 /* วันเดียวกันเก็บค่าท้ายสุด */
-  return [...byDay.entries()].map(([d,v]) => [d,v]);
+  /* ถ้าเหลือ 0 จุด = ไม่มีข้อมูลที่ลงวันที่ได้จริง ให้แสดงว่ายังไม่มีประวัติ ห้ามเอาจุดวันที่ล่วงหน้ามาวาดกราฟ */
+  pts = pts.slice().sort((a,b)=> a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0);  /* เรียงตามวันที่จริง (sort เสถียร จุดวันเดียวกันคงลำดับเดิม) */
+  /* ราคาขยับหลายครั้งในวันเดียวเกิดขึ้นจริง เก็บไว้ทุกจุด ยุบเฉพาะจุดที่ราคาเท่ากันติดกัน */
+  const out = [];
+  pts.forEach(p => { if (!out.length || out[out.length-1][1] !== p[1]) out.push([p[0], p[1]]); });
+  return out;
+}
+
+/* จำนวนจุดที่ลงวันที่ล่วงหน้า = เป็นไปไม่ได้ ต้องบอกผู้อ่านว่าซ่อนไว้กี่จุด */
+function futureCount(raw){
+  if (!raw || !raw.length) return 0;
+  const d = new Date(Date.now() + 86400000);
+  const cutoff = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  return raw.filter(p => !p || !p[0] || p[0] > cutoff).length;
 }
 function chartSVG(rawPoints){
   const points = cleanPoints(rawPoints);
@@ -1004,7 +1013,7 @@ async function renderDetail(key){
   const box = document.getElementById('histbox');
   if (rec && rec.points && rec.points.length){
     const shown = cleanPoints(rec.points);
-    const dropped = rec.points.length - shown.length;
+    const dropped = futureCount(rec.points);
     const lowest = Math.min(...shown.map(pt=>pt[1]));
     box.innerHTML = chartSVG(rec.points)
       + '<p class="hist-meta">ราคาต่ำสุดที่เคยเห็น: <b>'+money(lowest)+'</b> · '
