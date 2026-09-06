@@ -839,6 +839,36 @@
      120
     ]
    ]
+  },
+  "hygiene": {
+   "name": "ไฮยีน ปรับผ้านุ่ม สูตรมาตรฐาน แกลลอน 2,800 มล.",
+   "buy": "https://s.shopee.co.th/8V8ivnRyra",
+   "points": [
+    [
+     "2026-09-06",
+     110
+    ]
+   ]
+  },
+  "saline": {
+   "name": "Klean&Kare น้ำเกลือ 1,000 มล. ยกลัง 10 ขวด",
+   "buy": "https://s.shopee.co.th/W6ROtQ5lg",
+   "points": [
+    [
+     "2026-09-06",
+     500
+    ]
+   ]
+  },
+  "quaker": {
+   "name": "Quaker ข้าวโอ๊ต 1,000 กรัม แพ็ค 2",
+   "buy": "https://s.shopee.co.th/7VGBjro1U8",
+   "points": [
+    [
+     "2026-09-06",
+     168
+    ]
+   ]
   }
  }
 }
