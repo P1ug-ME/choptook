@@ -34,6 +34,10 @@
     [
      "2026-09-06",
      429
+    ],
+    [
+     "2026-09-06",
+     389
     ]
    ]
   },
@@ -867,6 +871,46 @@
     [
      "2026-09-06",
      168
+    ]
+   ]
+  },
+  "cheerful": {
+   "name": "Botare CHEERFUL ทิชชู่ดึงแขวน 4 ชั้น 1 ลัง 4 ห่อ",
+   "buy": "https://s.shopee.co.th/4fw0MZIy94",
+   "points": [
+    [
+     "2026-09-06",
+     199
+    ]
+   ]
+  },
+  "fineline": {
+   "name": "Fineline น้ำยาซักผ้าเข้มข้น 1,250 มล. x6 [3 แถม 3]",
+   "buy": "https://s.shopee.co.th/AAGwuiGTJs",
+   "points": [
+    [
+     "2026-09-06",
+     678
+    ]
+   ]
+  },
+  "fineline2": {
+   "name": "Fineline น้ำยาซักผ้า 1,250 มล. x2 [1 แถม 1]",
+   "buy": "https://s.shopee.co.th/9AOPj2Wo64",
+   "points": [
+    [
+     "2026-09-06",
+     263
+    ]
+   ]
+  },
+  "mgkitchen": {
+   "name": "มาจิคลีน น้ำยาทำความสะอาดครัว สเปรย์ 500 มล.",
+   "buy": "https://s.shopee.co.th/qjHnb4nh5",
+   "points": [
+    [
+     "2026-09-06",
+     76
     ]
    ]
   }
